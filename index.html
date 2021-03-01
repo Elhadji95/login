@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width,initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+ </head>   
+<body>
+    <div class="login-page">  
+    <img src="2.png" height="80" width="80">
+    <div class="form">  
+        <form class="Inscription-Mairie ">  
+            <h1> Inscription Mairie  </h1> 
+            <input type="text"  placeholder="Nom Commune">
+			<input type="text"  placeholder="Région">
+            <input type="email" placeholder="Adress Email">
+            <input type="mot de passe" placeholder="Entrer votre Mot de passe">
+            <input type="mot de passe"  placeholder="Confirmer votre Mot de passe">
+              <button type="button">Inscription</button>
+              <p class="message">  <a href="#">Login</a></p>
+        </form> 
+        <form class="Inscription-Amicale">  
+            <h1> Inscription Amicale  </h1> 
+            <input type="text"  placeholder="Nom Amicale">
+            <input type="text"  placeholder="Région">
+            <input type="text"  placeholder="Date de création">
+            <input type="email" placeholder="Adress Email">
+            <input type="mot de passe" placeholder="Entrer votre Mot de passe">
+            <input type="mot de passe"  placeholder="Confirmer votre Mot de passe">
+              <button type="button">Inscription</button>
+              <p class="message">  <a href="#">Login</a></p>
+        </form>     
+        <form class="login-form">  
+            <h1> Se connecter </h1> 
+            <div class="social-media">
+                <p><i class="fab fa-google"></i></p>
+                <p><i class="fab fa-facebook-f"></i></p>
+            </div>
+            <p class="choose-email">ou utiliser mon adresse e-mail :</p>
+            <input type="text" placeholder="User Name">
+            <input type="password"  placeholder="Password">
+              <button type="button">Connexion</button>
+              <p class="message"> Forgot Password? <a href="#">Inscription</a></p>
+        </form>      
+        </div>
+    </div>
+<script  src="https://code.jquery.com/jquery-3.3.1.min.js">  
+</script>
+<script>
+$('.message a').click(function()
+{
+    $('form').animate({ height:"toggle",opacity:"toggle"}, "slow") ;
+});
+</script>
+    
+</body>
+</html>
